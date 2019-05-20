@@ -1,9 +1,10 @@
 import numpy as np
 from dspBox import str2ndar
 
-def run(allopt, eachopt, pi):
-	with open("check\\test.txt") as f:
+def predict(allopt, eachopt, pi):
+	with open("Observations.txt", 'r') as f:
 		lines = f.readlines()
+		wf = open("Observations_Ans.txt", 'w')
 		for content in lines:
 			data = str2ndar(content)
 
@@ -39,5 +40,7 @@ def run(allopt, eachopt, pi):
 						for k in range(i - 1, -1, -1):
 							path[model, k] = back_path[model, k + 1, path[model, k + 1]]
 			forward_S = np.max(forward_S, axis = 1)
-			
-			print ("model %d" % (np.argmax(forward_S) + 1))
+
+			wf.write("model %d\n" % (np.argmax(forward_S) + 1))
+
+		wf.close()
