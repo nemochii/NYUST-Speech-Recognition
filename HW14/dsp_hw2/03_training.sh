@@ -15,7 +15,7 @@ model_list=lib/models.lst
 #################################################
 # re-adjust mean, var
 echo "step 01 [HErest]: adjust mean, var..."
-for ((i=1;i<=5;i++))
+for ((i=1;i<=10;i++))
 do
 	echo "iteration $i"
 	HERest -C $config -I $label \
