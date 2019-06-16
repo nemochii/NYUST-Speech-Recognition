@@ -1,0 +1,812 @@
+# gmm-latgen-faster --max-active=7000 --beam=11.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > exp/tri1/decode_test/lat.1.gz" 
+# Started at Sun Jun 16 23:13:13 CST 2019
+#
+gmm-latgen-faster --max-active=7000 --beam=11.0 --lattice-beam=6.0 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp/tri1/graph/words.txt exp/tri1/final.mdl exp/tri1/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > exp/tri1/decode_test/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data/test/split1/1/utt2spk scp:data/test/split1/1/cmvn.scp scp:data/test/split1/1/feats.scp ark:- 
+B10517047_v1_n01_k01 內用 一 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k01 is -6.36146 over 314 frames.
+B10517047_v1_n01_k02 內用 一 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k02 is -6.49111 over 226 frames.
+B10517047_v1_n01_k03 內用 一 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k03 is -5.90759 over 293 frames.
+B10517047_v1_n01_k04 內用 一 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k04 is -6.11191 over 263 frames.
+B10517047_v1_n01_k05 內用 一 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k05 is -5.5144 over 191 frames.
+B10517047_v1_n01_k06 內用 一 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k06 is -5.80835 over 214 frames.
+B10517047_v1_n01_k07 內用 一 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k07 is -6.0318 over 251 frames.
+B10517047_v1_n01_k08 內用 一 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k08 is -6.47296 over 212 frames.
+B10517047_v1_n01_k09 內用 一 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k09 is -6.32989 over 221 frames.
+B10517047_v1_n01_k10 內用 一 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n01_k10 is -7.27675 over 212 frames.
+B10517047_v1_n02_k01 內用 兩 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k01 is -6.3549 over 235 frames.
+B10517047_v1_n02_k02 內用 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k02 is -6.11526 over 223 frames.
+B10517047_v1_n02_k03 內用 兩 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k03 is -6.20919 over 186 frames.
+B10517047_v1_n02_k04 內用 兩 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k04 is -6.34631 over 177 frames.
+B10517047_v1_n02_k05 內用 兩 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k05 is -5.87729 over 221 frames.
+B10517047_v1_n02_k06 內用 兩 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k06 is -5.88945 over 177 frames.
+B10517047_v1_n02_k07 內用 兩 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k07 is -6.50838 over 179 frames.
+B10517047_v1_n02_k08 內用 兩 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k08 is -6.11032 over 165 frames.
+B10517047_v1_n02_k09 內用 兩 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k09 is -6.5827 over 179 frames.
+B10517047_v1_n02_k10 內用 兩 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n02_k10 is -6.39174 over 163 frames.
+B10517047_v1_n03_k01 內用 三 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k01 is -6.07602 over 165 frames.
+B10517047_v1_n03_k02 內用 三 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k02 is -6.23819 over 161 frames.
+B10517047_v1_n03_k03 內用 三 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k03 is -6.73092 over 174 frames.
+B10517047_v1_n03_k04 內用 三 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k04 is -6.54079 over 168 frames.
+B10517047_v1_n03_k05 內用 三 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k05 is -6.55974 over 154 frames.
+B10517047_v1_n03_k06 三 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k06 is -6.60111 over 149 frames.
+B10517047_v1_n03_k07 內用 三 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k07 is -6.66971 over 209 frames.
+B10517047_v1_n03_k08 內用 三 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k08 is -6.47251 over 184 frames.
+B10517047_v1_n03_k09 內用 三 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k09 is -6.22729 over 179 frames.
+B10517047_v1_n03_k10 三 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n03_k10 is -6.31604 over 170 frames.
+B10517047_v1_n04_k01 內用 四 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k01 is -5.91773 over 165 frames.
+B10517047_v1_n04_k02 內用 四 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k02 is -6.03289 over 156 frames.
+B10517047_v1_n04_k03 外帶 十 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k03 is -6.49571 over 165 frames.
+B10517047_v1_n04_k04 內用 四 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k04 is -6.17586 over 154 frames.
+B10517047_v1_n04_k05 內用 四 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k05 is -5.99586 over 151 frames.
+B10517047_v1_n04_k06 內用 四 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k06 is -5.84111 over 195 frames.
+B10517047_v1_n04_k07 內用 四 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k07 is -6.15511 over 156 frames.
+B10517047_v1_n04_k08 內用 四 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k08 is -6.62612 over 163 frames.
+B10517047_v1_n04_k09 內用 四 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k09 is -6.4539 over 186 frames.
+B10517047_v1_n04_k10 內用 四 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n04_k10 is -6.53566 over 191 frames.
+B10517047_v1_n05_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k01 is -6.41362 over 151 frames.
+B10517047_v1_n05_k02 內用 五 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k02 is -5.98487 over 154 frames.
+B10517047_v1_n05_k03 內用 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k03 is -6.89378 over 170 frames.
+B10517047_v1_n05_k04 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k04 is -5.60143 over 144 frames.
+B10517047_v1_n05_k05 內用 五 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k05 is -5.96442 over 165 frames.
+B10517047_v1_n05_k06 內用 五 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k06 is -5.69254 over 172 frames.
+B10517047_v1_n05_k07 內用 五 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k07 is -5.88784 over 165 frames.
+B10517047_v1_n05_k08 內用 五 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k08 is -6.09835 over 163 frames.
+B10517047_v1_n05_k09 內用 五 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k09 is -6.67423 over 172 frames.
+B10517047_v1_n05_k10 內用 五 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n05_k10 is -5.97091 over 174 frames.
+B10517047_v1_n06_k01 內用 六 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k01 is -6.24483 over 140 frames.
+B10517047_v1_n06_k02 六 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k02 is -6.58924 over 128 frames.
+B10517047_v1_n06_k03 內用 六 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k03 is -6.40023 over 165 frames.
+B10517047_v1_n06_k04 外帶 六 份 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k04 is -6.10848 over 177 frames.
+B10517047_v1_n06_k05 六 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k05 is -6.35517 over 174 frames.
+B10517047_v1_n06_k06 內用 六 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k06 is -5.98336 over 184 frames.
+B10517047_v1_n06_k07 內用 五 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k07 is -5.4821 over 179 frames.
+B10517047_v1_n06_k08 六 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k08 is -6.31008 over 177 frames.
+B10517047_v1_n06_k09 內用 六 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k09 is -6.34004 over 186 frames.
+B10517047_v1_n06_k10 內用 六 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n06_k10 is -6.15347 over 212 frames.
+B10517047_v1_n07_k01 內用 七 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k01 is -6.62581 over 156 frames.
+B10517047_v1_n07_k02 內用 四 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k02 is -6.60327 over 172 frames.
+B10517047_v1_n07_k03 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k03 is -5.70505 over 205 frames.
+B10517047_v1_n07_k04 內用 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k04 is -6.60388 over 207 frames.
+B10517047_v1_n07_k05 內用 七 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k05 is -5.66959 over 209 frames.
+B10517047_v1_n07_k06 內用 七 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k06 is -6.22467 over 205 frames.
+B10517047_v1_n07_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k07 is -6.45081 over 191 frames.
+B10517047_v1_n07_k08 內用 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k08 is -5.77848 over 186 frames.
+B10517047_v1_n07_k09 內用 七 包 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k09 is -6.63329 over 219 frames.
+B10517047_v1_n07_k10 內用 七 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n07_k10 is -6.44112 over 184 frames.
+B10517047_v1_n08_k01 內用 八 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k01 is -6.45566 over 156 frames.
+B10517047_v1_n08_k02 內用 八 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k02 is -5.96782 over 188 frames.
+B10517047_v1_n08_k03 內用 八 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k03 is -6.75651 over 200 frames.
+B10517047_v1_n08_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k04 is -6.32201 over 184 frames.
+B10517047_v1_n08_k05 內用 八 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k05 is -6.34352 over 174 frames.
+B10517047_v1_n08_k06 內用 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k06 is -7.3667 over 163 frames.
+B10517047_v1_n08_k07 內用 八 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k07 is -6.42473 over 144 frames.
+B10517047_v1_n08_k08 內用 八 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k08 is -6.37091 over 177 frames.
+B10517047_v1_n08_k09 內用 八 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k09 is -5.75875 over 188 frames.
+B10517047_v1_n08_k10 支 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n08_k10 is -5.94091 over 205 frames.
+B10517047_v1_n09_k01 內用 九 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k01 is -5.90781 over 202 frames.
+B10517047_v1_n09_k02 內用 九 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k02 is -5.97974 over 191 frames.
+B10517047_v1_n09_k03 內用 九 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k03 is -6.2446 over 198 frames.
+B10517047_v1_n09_k04 內用 九 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k04 is -6.13319 over 214 frames.
+B10517047_v1_n09_k05 內用 九 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k05 is -6.18642 over 209 frames.
+B10517047_v1_n09_k06 內用 九 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k06 is -6.88743 over 219 frames.
+B10517047_v1_n09_k07 內用 九 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k07 is -5.40169 over 179 frames.
+B10517047_v1_n09_k08 內用 九 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k08 is -5.46847 over 198 frames.
+B10517047_v1_n09_k09 內用 九 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k09 is -5.98741 over 184 frames.
+B10517047_v1_n09_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n09_k10 is -5.93359 over 207 frames.
+B10517047_v1_n10_k01 內用 十 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k01 is -5.5803 over 174 frames.
+B10517047_v1_n10_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k02 is -6.62024 over 193 frames.
+B10517047_v1_n10_k03 內用 十 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k03 is -6.58772 over 193 frames.
+B10517047_v1_n10_k04 內用 十 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k04 is -5.94282 over 198 frames.
+B10517047_v1_n10_k05 內用 十 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k05 is -6.35921 over 209 frames.
+B10517047_v1_n10_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k06 is -5.92118 over 200 frames.
+B10517047_v1_n10_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k07 is -5.90991 over 205 frames.
+B10517047_v1_n10_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k08 is -5.77143 over 156 frames.
+B10517047_v1_n10_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k09 is -5.77729 over 172 frames.
+B10517047_v1_n10_k10 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n10_k10 is -5.61624 over 179 frames.
+B10517047_v1_n11_k01 十一 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k01 is -6.16126 over 239 frames.
+B10517047_v1_n11_k02 內用 十一 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k02 is -5.84185 over 200 frames.
+B10517047_v1_n11_k03 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k03 is -6.0691 over 168 frames.
+B10517047_v1_n11_k04 內用 十一 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k04 is -6.13973 over 212 frames.
+B10517047_v1_n11_k05 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k05 is -6.2575 over 147 frames.
+B10517047_v1_n11_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k06 is -6.1335 over 161 frames.
+B10517047_v1_n11_k07 內用 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k07 is -5.92724 over 174 frames.
+B10517047_v1_n11_k08 一 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k08 is -6.24211 over 126 frames.
+B10517047_v1_n11_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k09 is -5.74199 over 144 frames.
+B10517047_v1_n11_k10 <SPOKEN_NOISE> 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n11_k10 is -6.24001 over 93 frames.
+B10517047_v1_n12_k01 內用 十二 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k01 is -6.20832 over 112 frames.
+B10517047_v1_n12_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k02 is -5.8515 over 163 frames.
+B10517047_v1_n12_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k03 is -5.78253 over 79 frames.
+B10517047_v1_n12_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k04 is -6.17753 over 91 frames.
+B10517047_v1_n12_k05 內用 十 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k05 is -6.1652 over 165 frames.
+B10517047_v1_n12_k06 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k06 is -6.33024 over 98 frames.
+B10517047_v1_n12_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k07 is -5.21998 over 107 frames.
+B10517047_v1_n12_k08 外帶 三 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k08 is -5.64739 over 177 frames.
+B10517047_v1_n12_k09 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k09 is -6.06471 over 91 frames.
+B10517047_v1_n12_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n12_k10 is -5.51581 over 163 frames.
+B10517047_v1_n13_k01 內用 十 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k01 is -6.25554 over 114 frames.
+B10517047_v1_n13_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k02 is -6.24562 over 84 frames.
+B10517047_v1_n13_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k03 is -5.78276 over 126 frames.
+B10517047_v1_n13_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k04 is -6.1152 over 158 frames.
+B10517047_v1_n13_k05 外帶 三 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k05 is -5.46029 over 130 frames.
+B10517047_v1_n13_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k06 is -5.78437 over 128 frames.
+B10517047_v1_n13_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k07 is -5.68725 over 128 frames.
+B10517047_v1_n13_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k08 is -5.69498 over 116 frames.
+B10517047_v1_n13_k09 包 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k09 is -6.0891 over 140 frames.
+B10517047_v1_n13_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n13_k10 is -5.4465 over 135 frames.
+B10517047_v1_n14_k01 外帶 十 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k01 is -5.8674 over 172 frames.
+B10517047_v1_n14_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k02 is -6.05007 over 86 frames.
+B10517047_v1_n14_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k03 is -6.00978 over 112 frames.
+B10517047_v1_n14_k04 <SPOKEN_NOISE> 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k04 is -6.01774 over 107 frames.
+B10517047_v1_n14_k05 份 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k05 is -6.20014 over 161 frames.
+B10517047_v1_n14_k06 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k06 is -5.74677 over 96 frames.
+B10517047_v1_n14_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k07 is -5.80484 over 158 frames.
+B10517047_v1_n14_k08 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k08 is -5.81586 over 105 frames.
+B10517047_v1_n14_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k09 is -5.60982 over 186 frames.
+B10517047_v1_n14_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n14_k10 is -5.42589 over 149 frames.
+B10517047_v1_n15_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k01 is -5.95323 over 91 frames.
+B10517047_v1_n15_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k02 is -5.67583 over 130 frames.
+B10517047_v1_n15_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k03 is -5.86053 over 137 frames.
+B10517047_v1_n15_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k04 is -5.39964 over 133 frames.
+B10517047_v1_n15_k05 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k05 is -6.32568 over 93 frames.
+B10517047_v1_n15_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k06 is -5.89458 over 158 frames.
+B10517047_v1_n15_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k07 is -5.40025 over 163 frames.
+B10517047_v1_n15_k08 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k08 is -5.79249 over 123 frames.
+B10517047_v1_n15_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k09 is -6.1896 over 156 frames.
+B10517047_v1_n15_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n15_k10 is -5.84496 over 126 frames.
+B10517047_v1_n16_k01 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k01 is -7.56577 over 68 frames.
+B10517047_v1_n16_k02 六 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k02 is -5.79707 over 137 frames.
+B10517047_v1_n16_k03 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k03 is -6.23759 over 133 frames.
+B10517047_v1_n16_k04 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k04 is -6.50804 over 107 frames.
+B10517047_v1_n16_k05 份 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k05 is -6.25435 over 100 frames.
+B10517047_v1_n16_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k06 is -6.37137 over 91 frames.
+B10517047_v1_n16_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k07 is -6.50158 over 75 frames.
+B10517047_v1_n16_k08 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k08 is -6.80542 over 72 frames.
+B10517047_v1_n16_k09 內用 <SPOKEN_NOISE> 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k09 is -4.23953 over 1431 frames.
+B10517047_v1_n16_k10 內用 十六 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n16_k10 is -6.07198 over 191 frames.
+B10517047_v1_n17_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k01 is -6.60155 over 61 frames.
+B10517047_v1_n17_k02 支 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k02 is -6.77669 over 102 frames.
+B10517047_v1_n17_k03 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k03 is -5.43492 over 214 frames.
+B10517047_v1_n17_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k04 is -6.47527 over 91 frames.
+B10517047_v1_n17_k05 外帶 一 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k05 is -6.03581 over 151 frames.
+B10517047_v1_n17_k06 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k06 is -7.52795 over 54 frames.
+B10517047_v1_n17_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k07 is -5.96061 over 154 frames.
+B10517047_v1_n17_k08 杯 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k08 is -6.03304 over 165 frames.
+B10517047_v1_n17_k09 包 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k09 is -6.4251 over 114 frames.
+B10517047_v1_n17_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n17_k10 is -5.80561 over 91 frames.
+B10517047_v1_n18_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k01 is -6.40923 over 79 frames.
+B10517047_v1_n18_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k02 is -6.52909 over 40 frames.
+B10517047_v1_n18_k03 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k03 is -6.457 over 79 frames.
+B10517047_v1_n18_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k04 is -6.05711 over 107 frames.
+B10517047_v1_n18_k05 紅茶 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k05 is -7.03551 over 68 frames.
+B10517047_v1_n18_k06 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k06 is -6.86099 over 98 frames.
+B10517047_v1_n18_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k07 is -5.34705 over 107 frames.
+B10517047_v1_n18_k08 外帶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k08 is -6.12662 over 105 frames.
+B10517047_v1_n18_k09 包 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k09 is -5.88297 over 158 frames.
+B10517047_v1_n18_k10 支 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n18_k10 is -6.01723 over 116 frames.
+B10517047_v1_n19_k01 外帶 四 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k01 is -5.86905 over 105 frames.
+B10517047_v1_n19_k02 一 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k02 is -5.85391 over 140 frames.
+B10517047_v1_n19_k03 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k03 is -6.57167 over 137 frames.
+B10517047_v1_n19_k04 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k04 is -5.78299 over 109 frames.
+B10517047_v1_n19_k05 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k05 is -7.14675 over 86 frames.
+B10517047_v1_n19_k06 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k06 is -6.14914 over 112 frames.
+B10517047_v1_n19_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k07 is -5.54762 over 144 frames.
+B10517047_v1_n19_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k08 is -6.00308 over 121 frames.
+B10517047_v1_n19_k09 包 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k09 is -6.15783 over 72 frames.
+B10517047_v1_n19_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n19_k10 is -6.68851 over 93 frames.
+B10517047_v1_n20_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k01 is -5.94025 over 98 frames.
+B10517047_v1_n20_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k02 is -6.01897 over 72 frames.
+B10517047_v1_n20_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k03 is -6.33671 over 77 frames.
+B10517047_v1_n20_k04 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k04 is -6.04556 over 163 frames.
+B10517047_v1_n20_k05 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k05 is -6.43261 over 126 frames.
+B10517047_v1_n20_k06 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k06 is -6.19583 over 123 frames.
+B10517047_v1_n20_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k07 is -5.84068 over 140 frames.
+B10517047_v1_n20_k08 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k08 is -5.524 over 107 frames.
+B10517047_v1_n20_k09 包 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k09 is -5.87826 over 98 frames.
+B10517047_v1_n20_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v1_n20_k10 is -5.93796 over 61 frames.
+B10517047_v2_n01_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k01 is -6.34576 over 105 frames.
+B10517047_v2_n01_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k02 is -6.03857 over 100 frames.
+B10517047_v2_n01_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k03 is -6.71595 over 35 frames.
+B10517047_v2_n01_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k04 is -7.11016 over 72 frames.
+B10517047_v2_n01_k05 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k05 is -6.07993 over 119 frames.
+B10517047_v2_n01_k06 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k06 is -7.07315 over 65 frames.
+B10517047_v2_n01_k07 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k07 is -6.17293 over 68 frames.
+B10517047_v2_n01_k08 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k08 is -6.12858 over 40 frames.
+B10517047_v2_n01_k09 包 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k09 is -6.19022 over 58 frames.
+B10517047_v2_n01_k10 外帶 七 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n01_k10 is -6.47405 over 47 frames.
+B10517047_v2_n02_k01 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k01 is -6.19551 over 58 frames.
+B10517047_v2_n02_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k02 is -5.95554 over 68 frames.
+B10517047_v2_n02_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k03 is -6.43469 over 75 frames.
+B10517047_v2_n02_k04 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k04 is -6.3359 over 100 frames.
+B10517047_v2_n02_k05 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k05 is -6.28566 over 75 frames.
+B10517047_v2_n02_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k06 is -6.22015 over 98 frames.
+B10517047_v2_n02_k07 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k07 is -6.44324 over 93 frames.
+B10517047_v2_n02_k08 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k08 is -5.71399 over 75 frames.
+B10517047_v2_n02_k09 外帶 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k09 is -4.88705 over 195 frames.
+B10517047_v2_n02_k10 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n02_k10 is -6.23702 over 114 frames.
+B10517047_v2_n03_k01 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k01 is -6.30087 over 54 frames.
+B10517047_v2_n03_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k02 is -6.84293 over 89 frames.
+B10517047_v2_n03_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k03 is -6.60107 over 96 frames.
+B10517047_v2_n03_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k04 is -6.31623 over 40 frames.
+B10517047_v2_n03_k05 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k05 is -7.18751 over 75 frames.
+B10517047_v2_n03_k06 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k06 is -6.80385 over 37 frames.
+B10517047_v2_n03_k07 外帶 三 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k07 is -6.18026 over 91 frames.
+B10517047_v2_n03_k08 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k08 is -6.00361 over 98 frames.
+B10517047_v2_n03_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k09 is -6.04275 over 137 frames.
+B10517047_v2_n03_k10 外帶 三 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n03_k10 is -5.61661 over 174 frames.
+B10517047_v2_n04_k01 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k01 is -6.17957 over 91 frames.
+B10517047_v2_n04_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k02 is -5.37448 over 96 frames.
+B10517047_v2_n04_k03 外帶 一 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k03 is -5.49212 over 107 frames.
+B10517047_v2_n04_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k04 is -6.9162 over 89 frames.
+B10517047_v2_n04_k05 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k05 is -6.57862 over 121 frames.
+B10517047_v2_n04_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k06 is -6.18564 over 123 frames.
+B10517047_v2_n04_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k07 is -5.68784 over 144 frames.
+B10517047_v2_n04_k08 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k08 is -5.75151 over 133 frames.
+B10517047_v2_n04_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k09 is -5.7417 over 179 frames.
+B10517047_v2_n04_k10 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n04_k10 is -5.47812 over 165 frames.
+B10517047_v2_n05_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k01 is -5.69761 over 112 frames.
+B10517047_v2_n05_k02 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k02 is -5.48581 over 163 frames.
+B10517047_v2_n05_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k03 is -5.63349 over 137 frames.
+B10517047_v2_n05_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k04 is -5.97597 over 112 frames.
+B10517047_v2_n05_k05 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k05 is -5.70873 over 107 frames.
+B10517047_v2_n05_k06 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k06 is -6.5376 over 79 frames.
+B10517047_v2_n05_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k07 is -5.50281 over 133 frames.
+B10517047_v2_n05_k08 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k08 is -6.34301 over 89 frames.
+B10517047_v2_n05_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k09 is -5.99587 over 205 frames.
+B10517047_v2_n05_k10 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n05_k10 is -5.62595 over 186 frames.
+B10517047_v2_n06_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k01 is -6.67775 over 98 frames.
+B10517047_v2_n06_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k02 is -7.44318 over 65 frames.
+B10517047_v2_n06_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k03 is -5.89635 over 68 frames.
+B10517047_v2_n06_k04 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k04 is -6.26571 over 75 frames.
+B10517047_v2_n06_k05 外帶 六 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k05 is -6.99103 over 126 frames.
+B10517047_v2_n06_k06 外帶 六 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k06 is -6.84403 over 56 frames.
+B10517047_v2_n06_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k07 is -6.55537 over 86 frames.
+B10517047_v2_n06_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k08 is -6.48419 over 116 frames.
+B10517047_v2_n06_k09 包 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k09 is -6.74609 over 77 frames.
+B10517047_v2_n06_k10 支 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n06_k10 is -6.02852 over 126 frames.
+B10517047_v2_n07_k01 外帶 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k01 is -6.55897 over 93 frames.
+B10517047_v2_n07_k02 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k02 is -6.2051 over 54 frames.
+B10517047_v2_n07_k03 外帶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k03 is -8.04769 over 19 frames.
+B10517047_v2_n07_k04 外帶 七 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k04 is -5.69147 over 116 frames.
+B10517047_v2_n07_k05 份 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k05 is -5.91072 over 93 frames.
+B10517047_v2_n07_k06 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k06 is -7.03614 over 77 frames.
+B10517047_v2_n07_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k07 is -6.6432 over 63 frames.
+B10517047_v2_n07_k08 一 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k08 is -6.12705 over 156 frames.
+B10517047_v2_n07_k09 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k09 is -6.94533 over 56 frames.
+B10517047_v2_n07_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n07_k10 is -6.2741 over 107 frames.
+B10517047_v2_n08_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k01 is -6.87565 over 26 frames.
+B10517047_v2_n08_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k02 is -4.87519 over 212 frames.
+B10517047_v2_n08_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k03 is -6.90378 over 68 frames.
+B10517047_v2_n08_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k04 is -7.30394 over 47 frames.
+B10517047_v2_n08_k05 外帶 <SPOKEN_NOISE> 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k05 is -7.04824 over 89 frames.
+B10517047_v2_n08_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k06 is -6.76001 over 126 frames.
+B10517047_v2_n08_k07 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k07 is -6.21293 over 86 frames.
+B10517047_v2_n08_k08 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k08 is -7.46956 over 86 frames.
+B10517047_v2_n08_k09 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k09 is -6.46097 over 98 frames.
+B10517047_v2_n08_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n08_k10 is -7.3158 over 77 frames.
+B10517047_v2_n09_k01 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k01 is -7.146 over 33 frames.
+B10517047_v2_n09_k02 外帶 一 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k02 is -6.64656 over 79 frames.
+B10517047_v2_n09_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k03 is -7.96783 over 35 frames.
+B10517047_v2_n09_k04 外帶 四 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k04 is -6.24991 over 105 frames.
+B10517047_v2_n09_k05 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k05 is -7.10515 over 58 frames.
+B10517047_v2_n09_k06 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k06 is -7.41553 over 77 frames.
+B10517047_v2_n09_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k07 is -6.16532 over 89 frames.
+B10517047_v2_n09_k08 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k08 is -6.83968 over 63 frames.
+B10517047_v2_n09_k09 包 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k09 is -6.36445 over 144 frames.
+B10517047_v2_n09_k10 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n09_k10 is -5.87684 over 102 frames.
+B10517047_v2_n10_k01 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k01 is -6.66476 over 33 frames.
+B10517047_v2_n10_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k02 is -6.46962 over 54 frames.
+B10517047_v2_n10_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k03 is -6.45574 over 84 frames.
+B10517047_v2_n10_k04 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k04 is -6.58213 over 91 frames.
+B10517047_v2_n10_k05 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k05 is -6.82583 over 100 frames.
+B10517047_v2_n10_k06 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k06 is -6.98879 over 89 frames.
+B10517047_v2_n10_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k07 is -5.54336 over 100 frames.
+B10517047_v2_n10_k08 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k08 is -6.11268 over 84 frames.
+B10517047_v2_n10_k09 包 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k09 is -6.23058 over 140 frames.
+B10517047_v2_n10_k10 支 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n10_k10 is -6.18736 over 91 frames.
+B10517047_v2_n11_k01 內用 八 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k01 is -6.80539 over 102 frames.
+B10517047_v2_n11_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k02 is -6.00285 over 89 frames.
+B10517047_v2_n11_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k03 is -5.87648 over 91 frames.
+B10517047_v2_n11_k04 份 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k04 is -5.78023 over 130 frames.
+B10517047_v2_n11_k05 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k05 is -6.62387 over 140 frames.
+B10517047_v2_n11_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k06 is -6.67026 over 154 frames.
+B10517047_v2_n11_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k07 is -5.81007 over 140 frames.
+B10517047_v2_n11_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k08 is -6.0738 over 142 frames.
+B10517047_v2_n11_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k09 is -5.6983 over 130 frames.
+B10517047_v2_n11_k10 十一 支 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n11_k10 is -6.28847 over 137 frames.
+B10517047_v2_n12_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k01 is -6.29475 over 130 frames.
+B10517047_v2_n12_k02 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k02 is -5.75593 over 119 frames.
+B10517047_v2_n12_k03 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k03 is -5.94446 over 137 frames.
+B10517047_v2_n12_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k04 is -6.19887 over 102 frames.
+B10517047_v2_n12_k05 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k05 is -6.04333 over 102 frames.
+B10517047_v2_n12_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k06 is -6.33887 over 133 frames.
+B10517047_v2_n12_k07 內用 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k07 is -6.09941 over 172 frames.
+B10517047_v2_n12_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k08 is -6.28963 over 137 frames.
+B10517047_v2_n12_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k09 is -5.86971 over 161 frames.
+B10517047_v2_n12_k10 外帶 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n12_k10 is -5.77112 over 144 frames.
+B10517047_v2_n13_k01 外帶 三 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k01 is -5.86063 over 128 frames.
+B10517047_v2_n13_k02 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k02 is -5.98005 over 130 frames.
+B10517047_v2_n13_k03 塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k03 is -5.87626 over 114 frames.
+B10517047_v2_n13_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k04 is -6.21809 over 107 frames.
+B10517047_v2_n13_k05 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k05 is -6.21437 over 107 frames.
+B10517047_v2_n13_k06 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k06 is -5.9149 over 96 frames.
+B10517047_v2_n13_k07 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k07 is -6.05152 over 98 frames.
+B10517047_v2_n13_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k08 is -5.93398 over 116 frames.
+B10517047_v2_n13_k09 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k09 is -6.19243 over 116 frames.
+B10517047_v2_n13_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n13_k10 is -5.65485 over 102 frames.
+B10517047_v2_n14_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k01 is -6.49383 over 107 frames.
+B10517047_v2_n14_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k02 is -6.17462 over 121 frames.
+B10517047_v2_n14_k03 外帶 七 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k03 is -6.57505 over 91 frames.
+B10517047_v2_n14_k04 外帶 四 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k04 is -5.95679 over 163 frames.
+B10517047_v2_n14_k05 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k05 is -6.15659 over 135 frames.
+B10517047_v2_n14_k06 外帶 四 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k06 is -6.51937 over 156 frames.
+B10517047_v2_n14_k07 外帶 四 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k07 is -5.52106 over 177 frames.
+B10517047_v2_n14_k08 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k08 is -6.26932 over 109 frames.
+B10517047_v2_n14_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k09 is -6.33899 over 165 frames.
+B10517047_v2_n14_k10 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n14_k10 is -6.26815 over 133 frames.
+B10517047_v2_n15_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k01 is -6.45064 over 135 frames.
+B10517047_v2_n15_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k02 is -5.74278 over 163 frames.
+B10517047_v2_n15_k03 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k03 is -6.1725 over 119 frames.
+B10517047_v2_n15_k04 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k04 is -5.96247 over 133 frames.
+B10517047_v2_n15_k05 外帶 十五 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k05 is -6.06795 over 188 frames.
+B10517047_v2_n15_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k06 is -6.04436 over 105 frames.
+B10517047_v2_n15_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k07 is -5.69554 over 128 frames.
+B10517047_v2_n15_k08 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k08 is -6.21772 over 114 frames.
+B10517047_v2_n15_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k09 is -5.80738 over 144 frames.
+B10517047_v2_n15_k10 外帶 十一 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n15_k10 is -5.91486 over 170 frames.
+B10517047_v2_n16_k01 外帶 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k01 is -5.7603 over 109 frames.
+B10517047_v2_n16_k02 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k02 is -5.77108 over 135 frames.
+B10517047_v2_n16_k03 六 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k03 is -6.29659 over 149 frames.
+B10517047_v2_n16_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k04 is -5.90715 over 135 frames.
+B10517047_v2_n16_k05 內用 五 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k05 is -6.15638 over 170 frames.
+B10517047_v2_n16_k06 內用 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k06 is -6.56594 over 161 frames.
+B10517047_v2_n16_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k07 is -6.03538 over 154 frames.
+B10517047_v2_n16_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k08 is -6.04128 over 130 frames.
+B10517047_v2_n16_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k09 is -6.10218 over 172 frames.
+B10517047_v2_n16_k10 支 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n16_k10 is -6.01939 over 154 frames.
+B10517047_v2_n17_k01 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k01 is -6.2674 over 144 frames.
+B10517047_v2_n17_k02 外帶 十七 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k02 is -5.70277 over 112 frames.
+B10517047_v2_n17_k03 外帶 一 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k03 is -6.32733 over 128 frames.
+B10517047_v2_n17_k04 外帶 七 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k04 is -6.19141 over 144 frames.
+B10517047_v2_n17_k05 外帶 一 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k05 is -6.34366 over 149 frames.
+B10517047_v2_n17_k06 杯 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k06 is -5.7834 over 156 frames.
+B10517047_v2_n17_k07 外帶 一 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k07 is -6.05188 over 154 frames.
+B10517047_v2_n17_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k08 is -5.86435 over 142 frames.
+B10517047_v2_n17_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k09 is -5.96283 over 163 frames.
+B10517047_v2_n17_k10 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n17_k10 is -6.58996 over 154 frames.
+B10517047_v2_n18_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k01 is -6.16153 over 126 frames.
+B10517047_v2_n18_k02 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k02 is -5.84539 over 123 frames.
+B10517047_v2_n18_k03 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k03 is -5.78302 over 140 frames.
+B10517047_v2_n18_k04 份 雞塊 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k04 is -5.89548 over 140 frames.
+B10517047_v2_n18_k05 包 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k05 is -6.28882 over 154 frames.
+B10517047_v2_n18_k06 外帶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k06 is -6.07858 over 98 frames.
+B10517047_v2_n18_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k07 is -5.52551 over 135 frames.
+B10517047_v2_n18_k08 包 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k08 is -5.84981 over 147 frames.
+B10517047_v2_n18_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k09 is -6.25505 over 133 frames.
+B10517047_v2_n18_k10 支 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n18_k10 is -6.06588 over 142 frames.
+B10517047_v2_n19_k01 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k01 is -6.17429 over 112 frames.
+B10517047_v2_n19_k02 個 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k02 is -5.7009 over 184 frames.
+B10517047_v2_n19_k03 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k03 is -6.50987 over 140 frames.
+B10517047_v2_n19_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k04 is -5.95515 over 112 frames.
+B10517047_v2_n19_k05 份 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k05 is -6.47513 over 170 frames.
+B10517047_v2_n19_k06 可樂 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k06 is -6.03041 over 89 frames.
+B10517047_v2_n19_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k07 is -5.437 over 140 frames.
+LOG (apply-cmvn[5.5.313~1-203c]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 400 utterances, errors on 0
+B10517047_v2_n19_k08 薯條 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k08 is -6.0056 over 126 frames.
+B10517047_v2_n19_k09 包 蘋果派 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k09 is -5.82356 over 109 frames.
+B10517047_v2_n19_k10 外帶 一 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n19_k10 is -5.57123 over 140 frames.
+B10517047_v2_n20_k01 外帶 二十 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k01 is -6.20675 over 123 frames.
+B10517047_v2_n20_k02 <SPOKEN_NOISE> 雞翅 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k02 is -5.61859 over 91 frames.
+B10517047_v2_n20_k03 塊 雞腿 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k03 is -6.25052 over 91 frames.
+B10517047_v2_n20_k04 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k04 is -5.80652 over 126 frames.
+B10517047_v2_n20_k05 份 沙拉 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k05 is -6.08892 over 105 frames.
+B10517047_v2_n20_k06 外帶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k06 is -6.77564 over 100 frames.
+B10517047_v2_n20_k07 杯 紅茶 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k07 is -5.67792 over 126 frames.
+B10517047_v2_n20_k08 個 漢堡 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k08 is -6.33715 over 112 frames.
+B10517047_v2_n20_k09 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k09 is -6.87412 over 112 frames.
+B10517047_v2_n20_k10 支 冰淇淋 
+LOG (gmm-latgen-faster[5.5.313~1-203c]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:289) Log-like per frame for utterance B10517047_v2_n20_k10 is -5.87428 over 168 frames.
+LOG (gmm-latgen-faster[5.5.313~1-203c]:main():gmm-latgen-faster.cc:176) Time taken 21.8992s: real-time factor assuming 100 frames/sec is 0.0399605
+LOG (gmm-latgen-faster[5.5.313~1-203c]:main():gmm-latgen-faster.cc:179) Done 400 utterances, failed for 0
+LOG (gmm-latgen-faster[5.5.313~1-203c]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is -6.08056 over 54802 frames.
+# Accounting: time=22 threads=1
+# Ended (code 0) at Sun Jun 16 23:13:35 CST 2019, elapsed time 22 seconds
