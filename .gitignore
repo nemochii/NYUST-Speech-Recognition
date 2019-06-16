@@ -1,5 +1,5 @@
 .venv/
 __pycache__/
 
-kaldi_SpeechRecognition/wav_data(original)/wav/test/*
-kaldi_SpeechRecognition/wav_data(original)/wav/train/*
+kaldi_SpeechRecognition/wav_data(original)/wav/test/B*
+kaldi_SpeechRecognition/wav_data(original)/wav/train/B*
